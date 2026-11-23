@@ -1,0 +1,86 @@
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+}
+.card {
+  background-color: white;
+  padding: 15px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th {
+  background-color: grey;
+  color: white;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #eef3ff;
+}
+
+.excellent { color: green; font-weight: bold; }
+.very-good { color: teal; font-weight: bold; }
+.good { color: royalblue; font-weight: bold; }
+.average { color: darkorange; font-weight: bold; }
+.failed { color: red; font-weight: bold; }
+#contactMessage {
+  max-width: 400px;
+  min-height: 80px;
+}

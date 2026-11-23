@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <h1>Student Management System</h1>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Dashboard</h2>
+    <p>Welcome to the Student Management System.</p>
+
+    <div class="card">
+      <h3>Total Students</h3>
+      <p id="totalStudents">0</p>
+      <div class="card">
+  <h3>Passed</h3>
+  <p id="passedStudents">0</p>
+</div>
+
+<div class="card">
+  <h3>Failed</h3>
+  <p id="failedStudents">0</p>
+</div>
+
+<div class="card">
+  <h3>Average Marks</h3>
+  <p id="averageMarks">0</p>
+</div>
+    </div>
+  </section>
+  <section>
+  <h2>Register a Student</h2>
+  <form id="studentForm">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName">
+
+    <label for="age">Age</label>
+    <input type="text" id="age">
+
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option value="">-- Select gender --</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label for="course">Course</label>
+    <select id="course">
+      <option value="">-- Select course --</option>
+      <option value="Software Development">Software Development</option>
+      <option value="Web Design">Web Design</option>
+      <option value="Data Analysis">Data Analysis</option>
+      <option value="Cyber Security">Cyber Security</option>
+      <option value="Networking">Networking</option>
+      <option value="Graphic Design">Graphic Design</option>
+    </select>
+
+    <label for="marks">Marks (0 - 100)</label>
+    <input type="text" id="marks">
+
+    <button type="submit">Register Student</button>
+  </form>
+
+  <p id="formMessage"></p>
+</section>
+<section>
+  <h2>Student Records</h2>
+  <p id="recordsNote"></p>
+  <input type="text" id="searchBox" placeholder="Search by name...">
+<button type="button" id="searchBtn">Search</button>
+<button type="button" id="showAllBtn">Show All</button>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Full Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>Marks</th>
+        <th>Performance</th>
+      </tr>
+    </thead>
+    <tbody id="recordsBody"></tbody>
+  </table>
+</section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
